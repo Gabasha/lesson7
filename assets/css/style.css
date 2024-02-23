@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, header a, header ul{
+    background-color: #0020F4;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-family: "BPG Mrgvlovani", sans-serif;
+    font-size: 16px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    padding-left: 15px;
+    color: red;
+    text-transform: capitalize;
+    border-radius: 20px;
+    border: 2px solid red;
+    padding: 10px;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    transition-timing-function: ease;
+}
+button:hover{
+    background-color: gray;
+    border: 2px solid black;
+}
+.logo{
+    max-width: 115px;
+    width: 20%;
+    vertical-align: middle;
+    padding: 20px;
+}
+nav, header li{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 50px;
+}
+.small img{
+    max-width: 707px;
+    width: 85%;
+    padding-left: 30px;
+}
+.big img{
+    max-width: 948px;
+    width: 100%;
+}
+.small,.big{
+    display: inline-block;
+    width: 40%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.article1 h1{
+    margin-top: 40px;
+    margin-bottom:15px;
+    color: #171717;
+    font-family: "BPG Mrgvlovani", sans-serif;
+    font-size: 32px;
+    margin-left:100px ;
+
+}
+.article2 h1{
+    margin-top: 40px;
+    margin-bottom:15px;
+    color: #171717;
+    font-family: "BPG Mrgvlovani", sans-serif;
+    font-size: 32px;
+    margin-left:650px ;
+}
+.section1 p{
+    width: 30%;
+    font-family: "ArchyEDT-Thin", sans-serif;
+    font-size: 16px;
+    margin-left: 100px;
+}
+.section1 img{
+  max-width: 707px;
+  width: 20%;
+  margin-left: 100px;
+  background: #0A22F4 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+}
+.section1 p, img{
+    display: inline-block;
+    vertical-align: middle;
+}    
+.section2 {
+    background-color: #0020F4;
+    position: relative;
+   
+}
+.section2 h1{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 10%;
+    padding-top: 50px;
+    color: #FFFFFF;
+    font-family: "BPG Mrgvlovani", sans-serif;
+    font-size: 22px;
+}
+.article3 img{
+    max-width: 463px;
+    width: 100%;
+    border-radius: 18px;
+    
+}
+.article3 p{
+    color: #171717;
+    font-family: "BPG Mrgvlovani", sans-serif;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0px;
+    width: 20%;
+    opacity: 0;
+    color: white;
+}
+.article3:hover p{
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+}
+
+.article3{
+    display: inline-block;
+    width: 20%;
+    margin-left: 100px;
+}
+.section3{
+    position: relative;
+}
+.slider{
+    background-image: url(../images/Rectangle\ 1.png);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    animation-name: slider;
+    animation: slider 10s infinite alternate;
+    position: relative;
+}
+.slider a{
+    opacity: 0;
+}
+.slider:hover a{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: grey;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+@keyframes slider{
+    0%{
+        background-image: url(../images/Rectangle\ 1.png);
+    }
+    50%{
+        background-image: url(../images/Rectangle\ 18.png);
+    }
+    100%{
+        background-image: url(../images/Rectangle\ 19.png);
+    }
+}
+
+
+
